@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery | eCommerce Website</title>
+    <script src="https://kit.fontawesome.com/eaf3068c8a.js"crossorigin="anonymous"></script>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.product-small-img img{
+    height: 92px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: .6 ;
+}
+.product-small-img img:hover{
+    opacity: 1;
+}
+.product-small-img{
+    float: left;
+}
+.product{
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.img-container img{
+    height: 500px;
+
+}
+.img-container{
+    float: right;
+    padding: 10px;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+}.card{
+    order: 1;
+}
+.card-details{
+    height: 100vh;
+    width: 40%;
+    order: 2;
+    top: 15%;
+    right: 9%;
+    transform: translate(0%);
+    position: absolute;
+}
+#ratings{
+    margin-top: 30px;
+    background-color: green;
+    padding: 4px 4px;
+    border-radius: 12px;
+}
+span{
+    color: white;
+}
+.reviews{
+ display: inline-block;
+ 
+}
+#list{
+    text-indent: 20px;
+}
+#list li {
+    list-style: none;
+}
+.specs{
+    margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<header>    
+<div class="card">
+    <div class="product">
+        <div class="product-small-img">
+            <img src="images/pic(2).jpg" onclick="myFunction(this)" alt="">
+            <img src="images/pic(3).jpg" onclick="myFunction(this)" alt="">
+            <img src="images/pic(4).jpg" onclick="myFunction(this)" alt="">
+            <img src="images/pic(5).jpg" onclick="myFunction(this)" alt="">
+            <img src="images/pic(6).jpg" onclick="myFunction(this)" alt="">
+        </div>
+        <div class="img-container">
+            <img id="imageBox" src="images/pic(1).jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="card-details">
+    <div class="title">
+        <h2>Apple iPhone 13 Pro Max (128GB) - Sierra Blue</h3>
+            <br>
+            <div class="reviews">
+        
+                <p> <span id="ratings">4.5 <i class="fa fa-star"></i></span> 11,000 ratings and 2500reviews</p> 
+            </div>
+            <br>
+            <br>
+        <div class="price">
+            <h3> &#8377; 1,29,700</h3>
+        </div>
+    <div class="product_details">
+        <br>
+        <div class="specs">
+        <ul id="list">
+            <li>&#8226; 17 cm (6.7-inch) Super Retina XDR display with ProMotion for a faster, more responsive feel </li>
+            <li>oi qwfguywe sfuyfs ytsiudh  </li>
+        </ul>
+        </div>
+        <div class="specs">
+        <ul id="list">
+            <li>&#8226; Cinematic mode adds shallow depth of field and shifts focus automatically in your videos </li>
+            
+        </ul>
+        </div>
+        <div class="specs">
+        <ul id="list">
+            <li>&#8226; Pro camera system with new 12MP Telephoto, Wide and Ultra Wide cameras; LiDAR Scanner; 6x optical zoom range; macro photography; Photographic Styles, ProRes video, Smart HDR 4, Night mode, Apple ProRAW, 4K Dolby Vision HDR recording </li>
+           
+        </ul>
+        </div>
+        <div class="specs">
+        <ul id="list">
+            <li>&#8226; 12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording </li>
+           
+        </ul>
+        </div>
+            <br>
+    
+    </div>
+
+    </div>
+</div>
+</header>
+    <script>
+        function myFunction(smallImg)
+        {
+            let fullImg = document.getElementById("imageBox");
+            fullImg.src = smallImg.src
+        }
+    </script>
+</body>
+</html>
