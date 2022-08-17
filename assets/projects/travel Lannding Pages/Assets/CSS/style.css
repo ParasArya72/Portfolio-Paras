@@ -231,18 +231,25 @@ header .logo {
 }
 
 @media (max-width: 768px) {
-  .header {
+  header {
     position: relative;
     width: 100%;
-    padding: 20px 90px;
+    padding: 20px 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
+  .hide{
+    display: none;
+   
+  }
+  
   .content h2 {
     font-size: 2.5em;
   }
   .group .action {
     margin: 0;
+    width: 161px
   }
   .group .navigation {
     display: none;
