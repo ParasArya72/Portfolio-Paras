@@ -10,7 +10,7 @@
 header {
   position: relative;
   width: 100%;
-  padding: 20px 100px;
+  padding: 20px  100px 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +144,7 @@ header .logo {
     display: none;
   }
   .group ul li a {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .header {
