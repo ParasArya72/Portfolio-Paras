@@ -1,11 +1,12 @@
 let newsSection = document.getElementById("newsSection");
 let source = 'google'
-let apiKey = 'f6ba5b630e1f4c939ae834d1f00144ab'
+let apiKey = '10860c265b01dec81b1f2d20f01d4ef2' 
+
 
 // creating get req 
 const xhr = new XMLHttpRequest();
 
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey}`, true);
+xhr.open('GET', `https://gnews.io/api/v4/search?q=example&country=in&token=${apiKey}`, true);
     xhr.getResponseHeader('Content-type', 'application/json');
 
 
@@ -21,7 +22,7 @@ xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey
                     `<div class="col-md-6 placeholder-glow">
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                       <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success text-wrap placeholder-glow">${element["author"]}</strong>
+
                         <h3 class="mb-0">${element["title"]}</h3>
                         <div class="mb-1 text-muted" placeholder-glow>${element["publishedAt"]}</div>
                         <p class="mb-auto overflow-auto placeholder-glow" >
@@ -30,7 +31,7 @@ xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey
                         <a href="${element['url']}" placeholder-glow target="_blank" class="stretched-link">Read more..</a>
                       </div>
                       <div class=" mt-4 me-4 col-auto d-none d-lg-block">
-                        <img class="cover rounded" width="200" height="250" src="${element["urlToImage"]}" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" placeholder="News Image.">
+                        <img class="cover rounded" width="200" height="250" src="${element["image"]}" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" placeholder="News Image.">
                         </img>
                       </div>
                     </div>
@@ -47,8 +48,7 @@ xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=in&apiKey=${apiKey
     xhr.send()
 
 
-// Date 
-// <div class="mb-1 text-muted" placeholder-glow>${element["publishedAt"]}</div>
+
 function updateDate() {
   let today = new Date();
 
