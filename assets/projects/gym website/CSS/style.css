@@ -1,0 +1,193 @@
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+      :root{
+        --primary-color: #d63031;
+        --secondary-color: #636e72;
+        --font: 'Poppins', sans-serif;
+      }
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body{
+        /* background:rgba(0, 0, 0, 0.9); */
+        font-family: var(--font);
+        overflow-x: hidden;
+
+      }
+      nav{
+        position: static;
+        width: 100vw;
+        height: 60px;
+        border-top: .5rem solid var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;;
+      }
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55px;
+        width: 15%;
+        font-weight: 700;
+        background: var(--primary-color);
+      }
+      .logo::before{
+        content:"GYM";
+        color: white;
+      }
+      .logo::after{
+        padding-left: 3px;
+        content: "FreakS";
+        color: black;
+
+      }
+      ul{
+        display: flex;
+        align-items: center;
+        height: 60px;
+      }
+      ul a{
+        text-decoration: none;
+        color: white;
+        margin: 0 2rem;
+        text-transform: uppercase;
+        font-family: var(--font);
+        font-size: 16px;
+        font-weight: 700;
+        border-bottom: 3px inset transparent;
+        
+      }
+      ul li{
+        list-style: none;
+      }
+      
+      ul a:hover{
+        color: var(--primary-color);
+        border-bottom: 3px inset var(--primary-color);
+        transition: ease-in;
+      }
+
+      .icon{
+        color: black;
+        display: block;
+      }
+     
+
+
+      .banner{
+        background: url(../image/gym.jpg);
+        margin-top: -55px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 95vh;
+      }
+
+      .intro {
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    color: white;
+}
+      .intro h2, p{
+        display: block;
+        width: 80%;
+
+      }
+      .intro h2{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 45px;
+      }
+      .intro .btn{
+        margin-top: 2rem;
+      }
+
+
+
+      .row{
+        display: flex;
+        justify-content: center;
+
+      }
+      .map{
+        border: 1px solid black;
+      }
+
+      .card{
+        width: 33.3%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card h2{
+        text-transform: uppercase;
+
+      }
+      
+     .fas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     iframe{
+      border: 3px solid black;
+
+     }
+     li{
+      display: block;
+     }
+
+     @media (max-width:736px){
+      nav{
+        position: sticky;
+        top: 0px;
+        width: 100%;
+      }
+      nav ul {
+        background-color: #efefef72;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+    }
+      nav ul a li{
+        color: #d63031;
+      }
+      h2.logo{
+        width: 100%;
+      }
+      .icon{
+        background-color: #d63031;
+        display: block;
+        color: #000; margin-left:10px;
+      }
+      .icon{
+        display:inline-block;
+        color: #100;
+      }
+      .join_btn{
+        position: absolute;
+        bottom: -50px;
+      }
+      .intro {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        color: white;
+    }
+        
+     }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Daredevil</title>
+    <link rel="shortcut icon" href="assets/netflix-logo.png" type="image/x-icon">
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/sharp-solid.css">
+<link rel="stylesheet" href="assets/style.css">
+</style>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="assets/netflix-logo.png" alt=""></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+            <img class="bg" src="assets/Daredevil.jpg" alt="">
+            <div class="content">
+                <img src="assets/Daredevil_logo.jpg" alt="" class="movieTitle">
+                <h4>
+                    <span>2018</span>
+                    <span><i> 13+</i></span>
+                    <span>3 Seasons</span>
+                    <span>Crime TV Show</span>
+                </h4>
+                <h style="color: #fff;"> Marvel's Daredevil</h>
+                <p>Blinded as a young boy, Matt Murdock fights injustice by day as a lawyer and by night as the Super Hero Daredevil in Hell's Kitchen, New York City.</p>
+                <p><em> Starring </em>: Charlie Cox, Deborah Ann Woll, Elden Henson</p>
+                <div class="buttons">
+                    <a onclick="toggleVideo()" href="#"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
+                    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+                </div>
+            </div>
+            <a class="play"  onclick="toggleVideo()" href="#"><i class="fa-light fa-circle-play"></i>Watch Trailer</a>
+    </div>
+        
+    <div class="trailer">
+        <video src="assets/trailer.mp4" controls></video>
+        <i onclick="toggleVideo()" class="fa-thin fa-close close"></i>
+    </div>
+
+<script src="assets/script.js"></script>
+    
+</body>
+</html>
