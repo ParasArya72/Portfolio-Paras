@@ -13,10 +13,5 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxYSyuHcmSDHTDgUU6Rzc
                                 },10000)
                                 form.reset()
                             })
-                            .catch(error => msg.innerHTML = "Error Sending message. Please Try Again "
-                                setTimeout(function(){
-                                    msg.innerHTML = ""
-                                },10000)
-                                form.reset()
-                            }))
+                            .catch(error => console.error('Error!', error.message))
                         })
